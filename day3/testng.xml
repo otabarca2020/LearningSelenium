@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="6">
+  
+<test name="Parameter oneTest">
+		<!-- This parameter will be passed this test only -->
+		 <parameter name="inputName" value="Otniel Abarca" />
+		<classes>
+			<class name="qatraining.LearningParametersTest">
+			</class>
+		</classes>
+	</test>
+<test name="Testing Parallel">
+		<!-- This parameter will be passed this test only -->
+		<classes>
+			<class name="qatraining.LearningScreenshots">
+			</class>
+		</classes>
+	</test>  
+  <!-- Test -->
+</suite> <!-- Suite -->
